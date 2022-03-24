@@ -27,7 +27,7 @@ describe('GET /', function () {
         if (err) {
           return done(err);
         }
-        chai.assert.isTrue(res.text.includes("<h1>Welcome to Furios Five application</h1>"));
+        chai.assert.isTrue(res.text.includes("<h1>Welcome to Furious Five's Original application</h1>"));
         return done();
       });
 
@@ -85,6 +85,7 @@ describe('POST /event', function () {
       .end((err, res) => {
         if (err) {
           return done(err);
+          //hello
         }
         chai.assert.isTrue(res.text.includes("Redirecting"));
         return done();
